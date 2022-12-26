@@ -12,6 +12,19 @@ This wiki is what I've comfied up into as I (re) set up a proper workspace for k
 And probably some other stuff that I have forgotten about.
 
 ## Points to Note
-* This is very much intended to be used as nodejs wiki; it doesn't _have_ to be. But several design choices become less _convincing_ in a single file envorment. Such as, for example, the Markdown by default philosophy; intended to make export to other software easier, doesn't really help in a single file wiki.
+* This is very much intended to be used as nodejs wiki; it doesn't _have_ to be. But several design choices become less _convincing_ in a single file enviroment. Such as, for example, the Markdown by default philosophy; intended to make export to other software easier, doesn't really help in a single file wiki.
 * Dark palletes don't really play well with Muuri; which makes the default story layout and the kanban boards; well retina-searing. I don't really have a problem with this as SolarizedLight, Blue and DesertSand are more than dark enough to not sear my retinas while still working well with Muuri.
 
+## Installation 
+
+### For a Single File
+* Go to https://gamer-kold.github.io/kodwiki/
+* Click on the checkmark on the side bar
+* A copy of the wiki should download as an html
+
+### For Node.js
+* Install tiddlywiki from npm
+* Clone this repo
+* Navigate to the repo's folder in a terminal
+* Run `tiddlywiki . --listen`
+* You should be able to access to your wiki by visiting `https://127.0.0.1:8080`
