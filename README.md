@@ -19,7 +19,7 @@ And probably some other stuff that I have forgotten about.
 
 ### For a Single File
 * Go to https://gamer-kold.github.io/kodwiki/
-* Click on the checkmark on the side bar
+* Click on the install button shown in Getting Started Tiddler / Click on the checkmark on the side bar
 * A copy of the wiki should download as an html
 
 ### For Node.js
