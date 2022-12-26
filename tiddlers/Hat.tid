@@ -1,0 +1,6 @@
+created: 20221226180923964
+kanban-history: [[20221226230923963,column: Foo,created]] [[20221226231033423,column: Bar,moved]] [[20221226231034558,column: Foo,moved]] [[20221227023744521,column: Bar,moved]] [[20221227023754422,column: Foo,moved]]
+modified: 20221226214235966
+tags: Example
+title: Hat
+type: text/vnd.tiddlywiki

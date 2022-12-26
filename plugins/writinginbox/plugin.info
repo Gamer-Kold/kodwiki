@@ -1,0 +1,9 @@
+{
+    "title": "$:/plugins/tq/writinginbox",
+    "name":"Writing Inbox",
+    "description": "a spaced repetition writing inbox to develop notes",
+    "author": "Talha Qamar",
+    "version": "0.0.1",
+    "core-version": ">=5.0.8",
+    "plugin-type": "plugin"
+}

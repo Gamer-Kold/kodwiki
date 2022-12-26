@@ -1,0 +1,30 @@
+created: 20221226111314858
+list-before: $:/core/ui/SideBarSegments/tabs
+modified: 20221226164250051
+tags: Tools $:/tags/SideBarSegment
+title: $:/plugins/tq/WritingInbox/Inbox
+type: text/vnd.tiddlywiki
+
+<$list filter= "[!is[draft]tag[$:/tq/WritingInbox]sameday:due<now YYYYMMDD>] [!is[draft]tag[$:/tq/WritingInbox]!days:due[-1]] +[first[]]" emptyMessage = "All done here">
+<$edit-text tiddler=<<currentTiddler>>/>
+<$button>
+<$action-sendmessage $message="tm-new-tiddler" text={{!!text}} type ="text/x-markdown"/>
+<$action-sendmessage $message="tm-delete-tiddler" />
+To Tiddler
+</$button>
+<$list filter="[<currentTiddler>get[text]sha256[]match{!!prev_sha}]" variable="discarded">
+<$button>
+<$action-setfield $tiddler=<<currentTiddler>> $field="due" $value={{{[{!!due}format:date[YYYY0MM0DD]add{!!interval}format:date[YYYY0MM0DD]]}}}/>
+<$action-setfield $tidder=<<currentTiddler>> $field="interval" $value={{{[{!!interval}multiply[2]]}}}/>
+No Modification
+</$button>
+</$list>
+<$list filter="[<currentTiddler>get[text]sha256[]!match{!!prev_sha}]" variable="discarded">
+<$button>
+<$action-setfield $tiddler=<<currentTiddler>> $field="due" $value={{{[<now YYYY0MM0DD>add[1]format:date[YYYY0MM0DD]]}}}/>
+<$action-setfield $tidder=<<currentTiddler>> $field="interval" $value=1/>
+<$action-setfield $tiddler=<<currentTiddler>> $field="prev_sha" $value="{{{[{!!text}sha256[]]}}}" />
+Next
+</$button>
+</$list>
+</$list>

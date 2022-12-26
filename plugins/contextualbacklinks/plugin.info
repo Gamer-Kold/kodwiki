@@ -1,0 +1,10 @@
+{
+    "title": "$:/plugins/tq/contextualbacklinks",
+    "name":"Contextual Backlinks",
+    "description": "Contextual Backlinks so you can see your backlinks in context",
+    "author": "Talha Qamar",
+    "version": "0.0.1",
+    "core-version": ">=5.0.8",
+    "plugin-type": "plugin",
+    "dependents":"$:/plugins/daniel0515/ContextPlugin"
+}

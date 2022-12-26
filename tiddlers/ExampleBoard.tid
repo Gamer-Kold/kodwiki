@@ -1,0 +1,9 @@
+created: 20221226180757364
+list: Foo Bar Goo
+modified: 20221226214149698
+muuri-tiddler-width: 1
+tags: Example
+title: ExampleBoard
+type: text/vnd.tiddlywiki
+
+{{||$:/plugins/BTC/Muuri-Kanban/ui/KanbanTemplate}}

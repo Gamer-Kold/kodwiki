@@ -1,0 +1,13 @@
+caption: + new note
+created: 20221226111921071
+description: add a new note for the writing inbox
+modified: 20221226163331426
+tags: $:/tags/PageControls
+title: $:/plugins/tq/WritingInbox/NewNoteButton
+type: text/vnd.tiddlywiki
+
+\define button_actions()
+<$action-sendmessage $message="tm-new-tiddler" title=<<now [UTC]YYYY0MM0DD0hh0mm0ssXXX>> tags="$:/tq/WritingInbox" due=<<now [UTC]YYYY0MM0DD>> interval=1 prev_sha = "" type="text/plain">
+\end
+
+<$button actions=<<button_actions>> class=<<tv-config-toolbar-class>>>+</$button>

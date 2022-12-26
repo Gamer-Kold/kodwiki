@@ -1,0 +1,2 @@
+If you look at the bottom of any tiddler you'll note that not only can you see the tiddlers backlinks; but also the context in which they appear.
+This allows for more serendipity of notes; i.e. it allows you to be suprised by your own notes. Remember the goal of note-taking is not memorisation; it is foster interesting thoughts.

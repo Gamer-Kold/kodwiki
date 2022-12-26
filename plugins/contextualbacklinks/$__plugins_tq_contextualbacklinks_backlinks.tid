@@ -1,0 +1,16 @@
+created: 20221226170808456
+modified: 20221226173846940
+tags: $:/tags/ViewTemplate
+title: $:/plugins/tq/contextualbacklinks/backlinks
+type: text/vnd.tiddlywiki
+
+<$vars searchterm=<<currentTiddler>> searchtermescaped={{{[<currentTiddler>split[ ]join[%20]]}}}>
+
+<ul>
+<$list filter="[all[current]!is[system]backlinks[]!is[draft]]">
+<li><<currentTiddler>></li>
+<$context term=<<searchterm>> />
+<$context term=<<searchtermescaped>>/>
+</$list>
+</ul>
+</$vars>

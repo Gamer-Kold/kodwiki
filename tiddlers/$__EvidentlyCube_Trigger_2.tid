@@ -1,0 +1,12 @@
+auto-trigger-textarea: 1
+caption: Markdown
+created: 20221226100243626
+display-filter: [<currentTiddler>]
+filter: [all[tiddlers]!is[system]!is[draft]search:title<query>]
+modified: 20221226172935952
+tags: $:/tags/EC/AutoComplete/Trigger
+template: [$option$](#$option$$caret$
+title: $:/EvidentlyCube/Trigger/2
+transform-filter: [<currentTiddler>]split[ ]join[%20]]
+trigger: [](
+type: text/vnd.tiddlywiki
